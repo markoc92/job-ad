@@ -9,7 +9,12 @@
         <h1 class="text-6xl font-bold uppercase text-white">Job <span class="text-black">Advertisement</span></h1>
         <p class="text-2xl text-gray-200 font-bold my-4">Find or post Job Advertisements</p>
         <div>
-            <a href="/register" class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">Sign Up to List a Job Ad</a>
+            @auth
+            <a href="/listings/create" class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">Post a Job Ad</a>
+            @else
+                <a href="/register" class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">Sign Up to Post a Job Ad</a>
+            @endauth
+
         </div>
     </div>
 </section>

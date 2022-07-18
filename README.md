@@ -13,22 +13,22 @@
 
 ## 3. Project Setup ##
 **cd into project directory**\
-Clone the repo and `cd` into it.
+clone the repo and `cd` into it.
 
 **install requirements**\
-Open the terminal and write this command `composer install`
+open the terminal and write this command `composer install`
 
-**database info**
-* project is configured for MySQL but you can configure if you want other databases
-* provide your database credentials in .env file
+**database info**\
+project is configured for MySQL but you can configure if you want other databases\
+provide your database credentials in .env file
 
-**env configuration**
+**env configuration**\
 Rename or copy `.env.example` file to `.env` and write required database information.
 
-**generate laravel key**
+**generate laravel key**\
 Run `php artisan key:generate` command
 
-**create storage link with public folder**
+**create storage link with public folder**\
 `php artisan storage:link`
 
 **migrate and seed database**\
